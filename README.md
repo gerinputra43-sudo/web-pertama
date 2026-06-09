@@ -1,1 +1,141 @@
-# web-pertama
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya | Gerin Maulana</title>
+    <style>
+        /* Mengatur dasar halaman agar konten benar-benar di tengah */
+        body {
+            font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            display: flex;             /* Menggunakan Flexbox */
+            justify-content: center;    /* Center secara horizontal */
+            align-items: center;        /* Center secara vertikal */
+            min-height: 100vh;          /* Mengambil tinggi penuh layar */
+            color: #333;
+        }
+
+        /* Card Profil */
+        .profile-card {
+            background: #fff;
+            width: 90%;
+            max-width: 380px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 40px 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Foto Profil */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%; /* Membuat lingkaran sempurna */
+            object-fit: cover;
+            border: 5px solid #007bff;
+            margin: 0 auto 20px auto; /* Margin auto kiri-kanan untuk memastikan di tengah */
+            display: block;
+            animation: pulse 3s infinite ease-in-out;
+        }
+            @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+           100% { transform: scale(1); }
+        }
+
+        /* Teks */
+        h1 {
+            margin: 10px 0 5px 0;
+            font-size: 20px;
+            color: #222;
+        }
+
+        .job-title {
+            color: #007bff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        /* Skill Tag */
+        .skills {
+            display: flex;
+            justify-content: center; /* Membuat badge skill di tengah */
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .skill-badge {
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        /* Tombol Kontak */
+        .btn-contact {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn-contact:hover {
+            background: #0056b3;
+            box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nama class harus sama dengan yang ada di bagian <style> -->
+    <div class="profile-card">
+        <img src="IMG_2189.jpg" class="profile-img" alt="Foto Profil Gerin">
+        
+        <h1>Gerin Maulana Djiputra</h1>
+        <p class="job-title">Mahasiswa</p>
+
+        <p class="bio">
+            Saya adalah seorang antusias teknologi yang senang mempelajari hal-hal baru, 
+            khususnya dalam pengembangan web dan desain visual.
+        </p>
+        <h1>BERIKUT ADALAH HASIL LATIHAN SAYA</h1>
+
+        <div class="skills">
+            <a href="LATIHAN 1.html" class="skill-badge">LATIHAN 1</a>
+            <a href="LATIHAN 2.html" class="skill-badge">LATIHAN 2</a>
+            <a href="LATIHAN 3.html" class="skill-badge">LATIHAN 3</a>
+            <a href="LATIHAN 4.html" class="skill-badge">LATIHAN 4</a>
+            <a href="LATIHAN 5.html" class="skill-badge">LATIHAN 5</a>
+        </div>
+
+        <a href="https://wa.me/087734183860" class="btn-contact">Hubungi Saya</a>
+    </div>
+
+</body>
+</html>
