@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Formatting Teks HTML</title>
+    <style>
+          .skills {
+            display: flex;
+            justify-content: center; /* Membuat badge skill di tengah */
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .skill-badge {
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STRUKTUR JUDUL (H1 - H6) -->
+    <h1>Judul Utama Artikel (H1)</h1>
+    <p>Gunakan H1 hanya sekali per halaman untuk judul utama.</p>
+
+    <h2>Sub Judul Level 2 (H2)</h2>
+    <h3>Sub Judul Level 3 (H3)</h3>
+    <h4>Sub Judul Level 4 (H4)</h4>
+    <h5>Sub Judul Level 5 (H5)</h5>
+    <h6>Sub Judul Level 6 (H6)</h6>
+
+    <hr>
+
+    <!-- KOMENTAR DAN TEBAL -->
+    <!-- ini adalah komentar -->
+    <h2>Teks Tebal dan Komentar</h2>
+    <p>
+        <strong>Teks formatting itu penting!</strong> Karena dapat membuat 
+        tulisan terlihat lebih menarik sehingga akan membuat <b>pengunjung senang</b> 
+        membacanya.
+    </p>
+
+    <hr>
+
+    <!-- TEKS MIRING -->
+    <h2>Teks Miring</h2>
+    <p>
+        Gunakan <i>teks miring</i> untuk memberikan penekanan pada teks, 
+        sehingga akan <em>menarik perhatian</em> pembaca. Biasanya 
+        digunakan pada <i>istilah asing</i> atau <em>bahasa daerah</em>.
+    </p>
+
+    <hr>
+
+    <!-- GARIS BAWAH DAN CORET -->
+    <h2>Garis Bawah dan Tercoret</h2>
+    <p>
+        <u>Teks formatting itu penting</u>, karena dapat membuat teks terlihat 
+        menarik dibanding <del>text biasa</del> <ins>plain text</ins>. 
+        Coretlah teks yang tidak <s>dibutuhkan</s> terpakai. Kadang teks <del>tercoret</del> 
+        diperbaiki dengan <ins>teks bergaris bawah</ins>.
+    </p>
+
+    <hr>
+
+    <!-- PANGKAT DAN MARKER -->
+    <h2>Pangkat dan Marker</h2>
+    <p>
+        Rumus luas persegi adalah S<sup>2</sup>. 
+        Lalu O<sub>2</sub> adalah rumus kimia dari oksigen.
+    </p>
+    <p>
+        Gunakan <mark>tag mark</mark> untuk menandai bagian teks yang penting (seperti menggunakan stabilo).
+    </p>
+
+    <hr>
+
+    <!-- FORMAT TEKS KOMPUTER -->
+    <h2>Formatting Teks Komputer</h2>
+    <p>
+        Perintah javascript untuk menampilkan teks ke console adalah <code>console.log()</code>. 
+        Misalkan kita punya variabel <var>name</var>:
+    </p>
+<pre>
+var name = "Petani Kode";
+console.log(name);
+</pre>
+    <p>
+        Hasil outputnya: <samp>Petani Kode</samp>. 
+        Tekan tombol <kbd>F5</kbd> untuk refresh.
+    </p>
+
+    <hr>
+
+    <!-- PENGGABUNGAN FORMAT -->
+    <h2>Penggabungan Format</h2>
+    <p>
+        Anda bisa menggabungkan format, misalnya: <b><u>tebal dan garis bawah</u></b> 
+        atau <i><b>tebal dan miring</b></i>.
+    </p>
+    <div>
+        <a href="PROFIL 1.html" class="skill-badge">KEMBALI</a>
+    </div>
+
+</body>
+</html>

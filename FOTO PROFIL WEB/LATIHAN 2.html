@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Profil Diri</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background: linear-gradient(135deg, #f4f6f9, #dfe6e9);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #34495e;
+            line-height: 1.6;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 180px;
+            transition: transform 0.4s, box-shadow 0.4s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .profile img:hover {
+            transform: scale(1.15) rotate(3deg);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        ul {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            list-style: none;
+            text-align: left;
+            animation: slideUp 1s ease;
+        }
+        li {
+            margin: 8px 0;
+            padding: 5px;
+            transition: background 0.3s;
+        }
+        li:hover {
+            background: #dfe6e9;
+            border-radius: 5px;
+        }
+        .links a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .links a:hover {
+            color: #e74c3c;
+            transform: scale(1.1);
+        }
+        .tooltip {
+            color: green;
+            cursor: pointer;
+            position: relative;
+        }
+        .tooltip:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2ecc71;
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 6px;
+            white-space: nowrap;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(40px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+          .skills {
+            display: flex;
+            justify-content: center; /* Membuat badge skill di tengah */
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .skill-badge {
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Website Profil Diri</h1>
+
+        <div class="profile">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Foto Profil">
+            <h2>Halo, Saya Gerin</h2>
+            <p>Mahasiswa yang sedang belajar pemrograman web dan teknologi AI.</p>
+        </div>
+
+        <h2>1. Tentang Saya</h2>
+        <p>Saya suka belajar tentang <b>HTML, CSS, dan JavaScript</b>. Selain itu, saya juga tertarik dengan dunia <i>Artificial Intelligence</i> dan streaming teknologi.</p>
+
+        <h2>2. Hobi Saya</h2>
+        <ul>
+            <li>Mendengarkan musik (Sasya Arkhisna, Niken Salindry, dll.)</li>
+            <li>Menonton film (Interstellar, Super Mario Galaxy Movie)</li>
+            <li>Belajar coding dan membuat website</li>
+        </ul>
+
+        <h2>3. Kunjungi Link Favorit</h2>
+        <p class="links">
+            - Cari informasi di <a href="https://www.google.com" target="_blank">Google</a><br>
+            - Streaming musik di <a href="https://www.spotify.com" target="_blank">Spotify</a>
+        </p>
+
+        <h2>4. Interaktif Tooltip</h2>
+        <p class="tooltip" title="Ini adalah teks dengan tooltip.">Arahkan mouse ke teks ini untuk melihat pesan tambahan.</p>
+        <div class="skills">
+            <a href="PROFIL 1.html" class="skill-badge">KEMBALI</a>
+        </div>
+    </div>
+
+</body>
+</html>
